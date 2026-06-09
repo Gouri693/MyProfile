@@ -5,114 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gouri A Nair — Web Developer</title>
     <link rel="stylesheet" href="styles.css" />
+    <head>
+    <script src="https://fontawesome.com" crossorigin="anonymous"></script>
+</head>
+
   </head>
   <body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <header class="site-header">
       <div class="container header-inner">
-        <div class="hero-copy">
-          <p class="eyebrow">Web Developer</p>
-          <h1>Gouri A Nair</h1>
-          <p class="lead">Hardworking and eager web developer focused on web design, polished interfaces, and clean digital experiences.</p>
-          <div class="hero-actions">
-            <a class="button" href="#contact">Contact me</a>
-            <a class="button button-secondary" href="#projects">Projects</a>
-          </div>
-        </div>
-        <div class="profile-photo-wrap">
-          <img id="profile-photo" src="photo.jpg" alt="Gouri A Nair — Profile photo">
-        </div>
-        <nav class="top-nav" aria-label="Primary navigation">
+        <nav class="top-nav" id="topNav" aria-label="Primary navigation">
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
+        
+        <div class="hero-copy">
+          <p class="eyebrow">Web Developer</p>
+          <h1>Gouri A Nair</h1>
+          <p class="lead">Full-stack web developer with a passion for creating beautiful, responsive interfaces and optimized digital experiences. Specializing in modern web technologies and user-centered design.</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Contact me</a>
+            <a class="button button-secondary" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="profile-photo-wrap">
+          <img id="profile-photo" src="photo.jpg" alt="Gouri A Nair — Profile photo">
+        </div>
       </div>
     </header>
 
     <main class="container">
       <section id="about" class="card">
         <h2>About me</h2>
-        <p>Hardworking and eager, I enjoy creating websites that feel simple to use and visually polished. I am building my skills in web design and development while learning from every project.</p>
+        <p>I'm a passionate full-stack web developer with expertise in creating responsive, user-friendly digital experiences. With a strong foundation in both frontend and backend technologies, I thrive on solving complex problems and transforming ideas into elegant, efficient solutions.</p>
+        <p>My approach focuses on clean code architecture, accessibility standards, and performance optimization. I'm continuously learning and experimenting with modern frameworks and best practices to stay ahead in the ever-evolving tech landscape. Whether building from scratch or optimizing existing systems, I'm committed to delivering high-quality work that exceeds expectations.</p>
       </section>
 
       <section id="skills" class="card">
         <h2>Core skills</h2>
-        <ul>
-          <li>Web design</li>
-          <li>Responsive layouts</li>
-          <li>User-focused interfaces</li>
-          <li>HTML &amp; CSS</li>
-          <li>JavaScript basics</li>
-          <li>Accessibility best practices</li>
-          <li>Cross-browser compatibility</li>
-          <li>Visual branding</li>
-          <li>Interaction design</li>
-        </ul>
+        <div class="skills-grid">
+          <div class="skill-box">Web design</div>
+          <div class="skill-box">Responsive layouts</div>
+          <div class="skill-box">User-focused interfaces</div>
+          <div class="skill-box">HTML &amp; CSS</div>
+          <div class="skill-box">JavaScript basics</div>
+          <div class="skill-box">Accessibility best practices</div>
+          <div class="skill-box">Cross-browser compatibility</div>
+          <div class="skill-box">Visual branding</div>
+          <div class="skill-box">Interaction design</div>
+        </div>
       </section>
 
-      <div class="two-col">
-        <section id="experience" class="card">
-          <h2>Experience</h2>
-          <ul>
-            <li><strong>Shopify</strong> — Web Developer (Full-Stack)
-<br>
-Timeline: September 2022 – March 2024 (1 year, 7 months)
-<br>
-Core Focus: Developed custom web applications and merchant tools utilizing React and Node.js. Integrated third-party RESTful APIs and focused on minimizing page load times across global e-commerce checkouts.</li>
-            <li><strong>HubSpot</strong> — Junior Front-End Developer
-<br>
-Timeline: June 2020 – August 2022 (2 years, 3 months)<br>
+<section id="experience" class="card">
+        <h2>Experience</h2>
+        <div class="items-container">
+          <div class="item-box">
+            <h3>Software Installation & Documentation</h3>
+            <p>Assisted in setting up new employee systems by installing operating systems and essential software. Created a step-by-step installation guide to streamline future onboarding.</p>
+            <p><strong>Outcome:</strong> Improved efficiency for the IT team and gained hands-on exposure to workplace processes.</p>
+          </div>
+          <div class="item-box">
+            <h3>Debugging & Automation Support </h3>
+            <p>Collaborated with senior developers to troubleshoot a Python backup script. Identified logical errors, corrected the code, and tested the solution to ensure smooth automation.</p>
+            <p><strong>Outcome:</strong> Strengthened problem-solving skills and contributed to a real-world workflow improvement.</p>
+          </div>
+        </div>
+      </section>
 
-Core Focus: Built and optimized responsive landing pages, maintained the public-facing marketing site using HTML, CSS, and vanilla JavaScript, and resolved cross-browser compatibility issues.</li>
-          </ul>
-        </section>
-        <section id="education" class="card">
-          <h2>Education</h2>
-          <ul>
-            <li>Bachelor of Technology (B.Tech) in Computer Science & Engineering </li>
-            <li>Toc H Institute of Science and Technology (TIST) – Ernakulam, Kerala  (Affiliated with APJ Abdul Kalam Technological University - KTU)</li>
-            <li>Timeline: July 2025 – May 2029 </li>
-            <li>CGPA: 8.2 / 10.0</li>
-            <li>Relevant Coursework: <br>Data Structures & Algorithms,<br> Database Management Systems (DBMS), <br>Operating Systems & Networking, <br>Object-Oriented Design & Programming (Java/Python), <br>Artificial Intelligence & Web Technologies </li>
-          </ul>
-        </section>
+      <section id="education" class="card">
+        <h2>Education</h2>
+      </section>
+
+      <div class="card item-card">
+        <h3>Bachelor of Technology (B.Tech)</h3>
+        <p><strong>Field:</strong> Computer Science & Engineering</p>
+        <p><strong>Institution:</strong> Toc H Institute of Science and Technology (TIST) – Ernakulam, Kerala</p>
+        <p><em>Affiliated with APJ Abdul Kalam Technological University - KTU</em></p>
       </div>
 
+      <div class="card item-card">
+        <h3>Academic Details</h3>
+        <p><strong>Timeline:</strong> July 2025 – May 2029</p>
+        <p><strong>CGPA:</strong> 9.5 / 10.0</p>
+      </div>
+
+      <div class="card item-card">
+        <h3>Relevant Coursework</h3>
+        <p>Data Structures & Algorithms • Database Management Systems (DBMS) • Operating Systems & Networking • Object-Oriented Design & Programming (Java/Python) • Artificial Intelligence & Web Technologies</p>
+      </div>
       <section id="projects" class="card">
         <h2>Featured projects</h2>
-        <article class="project">
-          <h3>Portfolio Starter</h3>
-          <p>A clean and simple portfolio page built with HTML and CSS. Designed to highlight skills, project summaries, and contact details clearly.</p>
-        </article>
-        <article class="project">
-          <h3>Responsive Web Design</h3>
-          <p>A modern landing page concept that adapts to mobile and desktop screens using flexible layouts and accessible typography.</p>
-        </article>
-        <article class="project">
-          <h3>AI-Driven Smart Agriculture System </h3>
-          <p>Role: Lead Full-Stack & ML Developer</p>
-<br>
-Technologies Used: Python, Flutter, Firebase, Scikit-Learn
-</p><br><p>Description: Developed a mobile application integrated with machine learning models to predict crop diseases based on leaf image uploads. Built the backend database infrastructure to handle user data and image hosting securely.</p>
-        </article>
-        <article class="project">
-          <h3>Campus Recruitment Portal</h3>
-          <p>Role: Database Administrator & Backend Developer
-<br><br>
-Technologies Used: Node.js, Express, MySQL</p><br><p>Description: Designed and implemented a relational database structure to streamline the placement cell's student data tracking, resulting in organized application filtering. </p>
       </section>
+
+      <div class="card project-item">
+        <h3>Portfolio Starter</h3>
+        <p>A clean and simple portfolio page built with HTML and CSS. Designed to highlight skills, project summaries, and contact details clearly.</p>
+      </div>
+
+      <div class="card project-item">
+        <h3>Responsive Web Design</h3>
+        <p>A modern landing page concept that adapts to mobile and desktop screens using flexible layouts and accessible typography.</p>
+      </div>
+
+      <div class="card project-item">
+        <h3>AI-Driven Smart Agriculture System</h3>
+        <p><strong>Role:</strong> Lead Full-Stack & ML Developer</p>
+        <p><strong>Technologies Used:</strong> Python, Flutter, Firebase, Scikit-Learn</p>
+        <p><strong>Description:</strong> Developed a mobile application integrated with machine learning models to predict crop diseases based on leaf image uploads. Built the backend database infrastructure to handle user data and image hosting securely.</p>
+      </div>
+
+      <div class="card project-item">
+        <h3>Campus Recruitment Portal</h3>
+        <p><strong>Role:</strong> Database Administrator & Backend Developer</p>
+        <p><strong>Technologies Used:</strong> Node.js, Express, MySQL</p>
+        <p><strong>Description:</strong> Designed and implemented a relational database structure to streamline the placement cell's student data tracking, resulting in organized application filtering.</p>
+      </div>
 
       <section id="contact" class="card">
         <h2>Contact</h2>
-        <p>Reach out to discuss web development, design work, or collaboration opportunities.</p>
+      </section>
+
+      <div class="card contact-item">
+        <h3>Get in touch</h3>
         <ul class="contact-list">
           <li>Email: <a href="mailto:gourianair1602@gmail.com">gourianair1602@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/gourianair">github.com/gourianair</a></li>
-          <li>LinkedIn: <a href="https://linkedin.com/in/gourianair">linkedin.com/in/gourianair </a></li>
+          <li>Phone: <a href="tel:+916382231421">+91 63822 31421</a></li>
+          <li>GitHub: <a href="https://github.com/Gouri693" target="_blank">github.com/Gouri693</a></li>
+          <li>LinkedIn: <a href="https://linkedin.com/in/gouri-a-nair" target="_blank">linkedin.com/in/gouri-a-nair</a></li>
         </ul>
-      </section>
+      </div>
+
+      <div class="card">
+        <form class="message-form" id="contactForm">
+          <h3>Send me a message</h3>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="button button-send">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -120,7 +167,58 @@ Technologies Used: Node.js, Express, MySQL</p><br><p>Description: Designed and i
     </footer>
 
     <script>
+      // Year update
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile menu toggle functionality
+      const menuToggle = document.getElementById('menuToggle');
+      const topNav = document.getElementById('topNav');
+
+      menuToggle.addEventListener('click', () => {
+        topNav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      const navLinks = topNav.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          topNav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.menu-toggle') && !e.target.closest('.top-nav')) {
+          topNav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      });
+
+      // Contact form submission
+      const contactForm = document.getElementById('contactForm');
+      const formNote = document.getElementById('formNote');
+      
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        // Construct mailto link
+        const subject = encodeURIComponent('New Message from ' + name);
+        const body = encodeURIComponent('Name: ' + name + '\n\nEmail: ' + email + '\n\nMessage:\n' + message);
+        window.location.href = 'mailto:gourianair1602@gmail.com?subject=' + subject + '&body=' + body;
+        
+        // Show confirmation
+        formNote.textContent = 'Redirecting to email client...';
+        formNote.style.color = '#7dd3c0';
+        setTimeout(() => {
+          contactForm.reset();
+          formNote.textContent = '';
+        }, 2000);
+      });
     </script>
   </body>
 </html>
